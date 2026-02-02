@@ -3,9 +3,7 @@
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
-\usepackage{marvosym}
 \usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
@@ -13,216 +11,156 @@
 \usepackage{tabularx}
 \input{glyphtounicode}
 
-
-%----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
-
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
-\fancyfoot{}
+\fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
 \addtolength{\topmargin}{-.5in}
 \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
-
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Sections formatting
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-% Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
-%-------------------------
-% Custom commands
 \newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
+  \item\small{#1 \vspace{-2pt}}
 }
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & #2 \\
+  \end{tabular*}\vspace{-7pt}
 }
-
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
-%-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 \begin{document}
 
 %----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
-
 \begin{center}
-    \textbf{\Huge \scshape Bhavya Wadhwa} \\ \vspace{1pt}
-    \small 413-210-0334 $|$ \href{mailto:x@x.com}{\underline{bwadhwa@umass.edu}} $|$ 
-    \href{https://linkedin.com/in/bhavya-wadhwa-bms}{\underline{linkedin.com/in/bwadhwa}} $|$
-    \href{https://github.com/bhavya6828}{\underline{github.com/bhavya6828}}
-    $|$ \href{https://bhavyawadhwa.vercel.app}{\underline{bhavyawadhwa.vercel.app}}
+  \textbf{\Huge \scshape Bhavya Wadhwa} \\ \vspace{1pt}
+  \small
+  413-210-0334 $|$
+  \href{mailto:bwadhwa@umass.edu}{bwadhwa@umass.edu} $|$
+  \href{https://linkedin.com/in/bwadhwa}{linkedin.com/in/bwadhwa} $|$
+  \href{https://github.com/bhavya6828}{github.com/bhavya6828} $|$
+  \href{https://bhavyawadhwa.vercel.app}{bhavyawadhwa.vercel.app}
 \end{center}
-
 
 %-----------EDUCATION-----------
 \section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {University of Massachusetts Amherst}{Amherst, MA}
-      {Bachelors in Computer Science with Multidisciplinary Honors, Minor in Business (GPA: 4.0)}{Aug. 2024 -- May 2028}
-     \resumeItemListStart
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {University of Massachusetts Amherst}{Amherst, MA}
+    {B.S. in Computer Science (Honors), Minor in Business \textbf{GPA: 3.96}}{Aug 2024 -- May 2028}
+  \resumeItemListStart
     \resumeItem{Relevant Coursework: Data Structures, Object-Oriented Programming, Calculus III, Probability \& Statistics}
+    \resumeItem{Focus Areas: Object-Oriented Design, Software Development, Problem Solving}
   \resumeItemListEnd
-
-  \resumeSubHeadingListEnd
-  
-
+\resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------
 \section{Experience}
-  \resumeSubHeadingListStart
+\resumeSubHeadingListStart
 
-    \resumeSubheading
-      {Data Analyst Intern}{June 2025 -- September 2025}
-      {Global Origin, LLC}{Remote}
-      \resumeItemListStart
-        \resumeItem{Tracked key KPIs including DAU, MAU, ARPU, and churn rate to support data-driven decision-making.}
-        \resumeItem{Conducted A/B testing and behavioral analysis to optimize game mechanics and user experience.}
-        \resumeItem{Created visual reports and presented to stakeholders including developers, designers, and marketing teams.}
-      \resumeItemListEnd
-      
-% -----------Multiple Positions Heading-----------
-%    \resumeSubSubheading
-%     {Software Engineer I}{Oct 2014 - Sep 2016}
-%     \resumeItemListStart
-%        \resumeItem{Apache Beam}
-%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
-%     \resumeItemListEnd
-%    \resumeSubHeadingListEnd
-%-------------------------------------------
+  \resumeSubheading
+    {Data Analyst Intern}{Jun 2025 -- Sep 2025}
+    {Global Origin, LLC}{Remote}
+  \resumeItemListStart
+    \resumeItem{Analyzed user engagement metrics (DAU, MAU, ARPU, churn) to support data-driven business decisions.}
+    \resumeItem{Conducted A/B testing and behavioral analysis to improve feature adoption and user experience.}
+    \resumeItem{Communicated insights through dashboards and reports to developers, designers, and marketing stakeholders.}
+  \resumeItemListEnd
 
-    \resumeSubheading
-      {Undergraduate Research Assistant}{May 2025 -- September 2025}
-      {Wireless and Sensor Systems Lab (Mentor: Abdul Aziz)}{Amherst, MA}
-      \resumeItemListStart
-        \resumeItem{Analyzed physiological sensor data (Phybrata) by processing large CSV datasets in Python using Pandas, Numpy, and Matplotlib, focusing on treatment effects across Eyes Open (EO) and Eyes Closed (EC) conditions.}
-        \resumeItem{Built and evaluated multiple ML models including (SVM, Random Forest, KNN, CNN) to classify and detect trends in sensor data related to treatment response and reached a final validation accuracy of 92.9\%}
-        \resumeItem{Performed detailed Data Visualization using Seaborn \& Matplotlib to generate graphs and confusion matrices to compare training and validation accuracy.}
-    \resumeItemListEnd
+  \resumeSubheading
+    {Undergraduate Research Assistant}{May 2025 -- Sep 2025}
+    {Wireless and Sensor Systems Lab}{Amherst, MA}
+  \resumeItemListStart
+    \resumeItem{Designed reusable Python pipelines to preprocess and analyze large-scale physiological sensor datasets, improving data reliability and reproducibility.}
+    \resumeItem{Built and evaluated machine learning models (SVM, KNN, CNN), achieving 92.9\% validation accuracy.}
+    \resumeItem{Developed visualizations and performance reports to compare experimental outcomes across conditions.}
+  \resumeItemListEnd
 
-    \resumeSubheading
-      {Peer Research Consultant}{September 2025 -- Present}
-      {UMass Amherst}{Amherst, MA}
-      \resumeItemListStart
-        \resumeItem{My role involves advising peers on their individual research projects. Currently I process 10+ tickets each shift}
-        \resumeItem{I work on both long term and short term projects ranging from 2 weeks to semester long.}
-      \resumeItemListEnd
+  \resumeSubheading
+    {Peer Research Consultant}{Sep 2025 -- Present}
+    {UMass Amherst}{Amherst, MA}
+  \resumeItemListStart
+    \resumeItem{Provided technical and methodological guidance on research projects, resolving 10+ support requests per shift.}
+    \resumeItem{Collaborated with peers on short-term and semester-long projects, emphasizing clear communication and accountability.}
+  \resumeItemListEnd
 
-    \resumeSubheading
-      {Data Management Intern}{May 2024 -- August 2024}
-      {Delta Healthcare}{Remote}
-      \resumeItemListStart
-        \resumeItem{Utilized Python (Pandas, Numpy) to clean, organize, and process large CSV datasets related to pharmaceutical inventory, sales, and order records, saving 20\% time for business stakeholders}
-        \resumeItem{Automated routine data tasks such as merging, filtering, and deduplicating CSV files, improving team efficiency and reducing manual errors.}
-    \resumeItemListEnd
+  \resumeSubheading
+    {Data Management Intern}{May 2024 -- Aug 2024}
+    {Delta Healthcare}{Remote}
+  \resumeItemListStart
+    \resumeItem{Cleaned, organized, and processed large datasets using Python (Pandas, NumPy), reducing manual effort by 20\%.}
+    \resumeItem{Automated data workflows including merging, filtering, and deduplication to improve operational efficiency.}
+  \resumeItemListEnd
 
-  \resumeSubHeadingListEnd
-
+\resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
 \section{Projects}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{Campus Connect} $|$ \emph{CalHacks 12.0} $|$ \emph{React, Node.js, PostgreSQL}}{}
-          \resumeItemListStart
-            \resumeItem{Built an AI-driven campus networking platform}
-            \resumeItem{Integrated Claude and Google Places API to deliver real-time meet-up and venue suggestions}
-            \resumeItem{Added Google Calendar syncing to surface mutual availability and enable instant scheduling.}
-          \resumeItemListEnd
-         \resumeProjectHeading
-          {\textbf{Realtime Chat App} $|$ \emph{Reactjs, Firebase, Bootstrap, HTML}}{}
-          \resumeItemListStart
-            \resumeItem{Used Firebase Authentication(SDK) to facilitate authentication \& Cloud Firestore to store data.}
-            \resumeItem{A react based web application which allow users to chat in real time.}
-          \resumeItemListEnd
-     \resumeProjectHeading
-          {\textbf{News Aggregator Website} $|$ \emph{HTML, CSS, JavaScript, Node.js, Axios, NewsAPI}}{}
-          \resumeItemListStart
-            \resumeItem{Developed a functional news website using Node.js to serve static frontend files and handle backend API requests}
-            \resumeItem{Integrated the NewsAPI to fetch real-time news articles based on user queries, using Axios for HTTP requests.}
-          \resumeItemListEnd
-     \resumeProjectHeading
-          {\textbf{Portfolio Website} $|$ \emph{Next.js, Tailwind CSS, Framer Motion}}{}
-          \resumeItemListStart
-            \resumeItem{Designed and developed a fully responsive personal portfolio to showcase projects, experiences, and skills using Next.js for fast routing and optimized performance.}
-            \resumeItem{Focused on accessibility and performance, resulting in a mobile-friendly, fast-loading site deployed for the audience}
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
 
+  \resumeProjectHeading
+    {\textbf{NORTHSTAR} $|$ \emph{Ongoing} $|$ React, Node.js, PostgreSQL}{}
+  \resumeItemListStart
+    \resumeItem{Building a career development platform that delivers industry insights, resume feedback, and interview practice tools for students and early professionals.}
+    \resumeItem{Developed full-stack features to manage user profiles, resumes, and personalized insights using a modular and scalable architecture.}
+    \resumeItem{Applied object-oriented design principles and RESTful APIs to support maintainability, extensibility, and future integrations.}
+  \resumeItemListEnd
 
+  \resumeProjectHeading
+    {\textbf{Campus Connect} $|$ CalHacks 12.0 $|$ React, Node.js, PostgreSQL}{}
+  \resumeItemListStart
+    \resumeItem{Built a full-stack campus networking platform enabling users to discover events and connections based on interests.}
+    \resumeItem{Integrated third-party APIs (Claude AI, Google Places, Google Calendar) to deliver personalized recommendations and scheduling.}
+    \resumeItem{Designed scalable backend logic and database schemas to support user growth and feature expansion.}
+  \resumeItemListEnd
 
-%
-%-----------PROGRAMMING SKILLS-----------
+  \resumeProjectHeading
+    {\textbf{Portfolio Website} $|$ Next.js, Tailwind CSS, Framer Motion}{}
+  \resumeItemListStart
+    \resumeItem{Designed and developed a responsive personal portfolio with a focus on accessibility, performance, and UI design.}
+    \resumeItem{Deployed a fast-loading, mobile-friendly site using best practices in frontend development.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: Java, Python, JavaScript, HTML/CSS} \\
-     \textbf{Frameworks}{: React.js, Next.js, Node.js, Tailwind, JUnit, WordPress, Material-UI} \\
-     \textbf{Libraries}{: Pandas, NumPy, sci-kit learn, Matplotlib, TensorFlow, Keras} \\
-     \textbf{Version Control}{: git, GitHub}
-    }
-    }
- \end{itemize}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{
+  \item{
+    \textbf{Languages}: Java, Python, JavaScript, HTML/CSS \\
+    \textbf{Frameworks}: React.js, Next.js, Node.js, Tailwind CSS, JUnit \\
+    \textbf{Libraries}: Pandas, NumPy, scikit-learn, Matplotlib, TensorFlow, Keras \\
+    \textbf{Version Control}: Git, GitHub
+  }
+}
+\end{itemize}
 
-
-%-------------------------------------------
 \end{document}
